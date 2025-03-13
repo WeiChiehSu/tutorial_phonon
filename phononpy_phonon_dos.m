@@ -6,7 +6,7 @@
 clear 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-material_name = 'GdSbTe-AFM-7U(DFPT-111)';
+material_name = '114514';
 natom = 6;
 xmin = 0;    % frequency range (THz)
 xmax = 5;   
