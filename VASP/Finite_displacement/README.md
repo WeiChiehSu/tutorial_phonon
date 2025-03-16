@@ -104,3 +104,7 @@ phonopy -f disp-001/vasprun.xml disp-002/vasprun.xml disp-003/vasprun.xml
 or
 
 phonopy -f disp-{001..003}/vasprun.xml
+
+# example
+
+https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/Finite_displacement/example
