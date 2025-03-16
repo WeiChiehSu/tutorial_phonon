@@ -40,7 +40,7 @@ echo -e "you are acquiring the resoures\n$(cat $PBS_NODEFILE)"
 # use this if you want the intel mpi, be default, we use impi
 #module load impi/2018/QE/6.3
 
-export PATH=/home/880212l26111201/intel/oneapi/intelpython/latest/envs/phonopy/bin:$PATH
+export PATH=/home/114514/intel/oneapi/intelpython/latest/envs/phonopy/bin:$PATH
 echo -e "using MPI: mpiexec is \n$(type -p mpiexec)"
 #np=$(cat $PBS_NODEFILE |wc -l)
 
