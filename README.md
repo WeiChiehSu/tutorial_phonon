@@ -5,8 +5,7 @@ Please Check that VASP or Quantum ESPRESSO is installed on Linux before proceedi
 
 For the tutorial of VASP phonon calculation with Phonopy , please refer to:https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP
 
-For the tutorial of Quantum ESPRESSO phonon calculation with Phonopy, please refer to:[https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP](https://github.com/WeiChiehSu/tutorial_phonon/tree/main/Quantum_Espresso)
-
+For the tutorial of Quantum ESPRESSO phonon calculation with Phonopy, please refer to: https://github.com/WeiChiehSu/tutorial_phonon/tree/main/Quantum_Espresso
 # Introduction
 
 Phonopy(https://phonopy.github.io/phonopy/) is an open-source software used for calculating lattice phonon properties. It can handle calculations ranging from structure optimization to phonon frequencies, and it is capable of calculating the distribution of phonons at different wave vectors (q-points), phonon density of states (DOS), and specific heat, among other properties. Phonopy supports various quantum calculation methods, such as VASP, Quantum ESPRESSO, and other computational platforms, for lattice dynamics analysis.
