@@ -1,1 +1,1 @@
-.
+# Tutorial phononpy with VASP
