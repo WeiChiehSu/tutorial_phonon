@@ -54,5 +54,19 @@ Exit the virtual environment:
 
 conda deactivate
 
+#test phonopy
 
+Enter the phonopy virtual environment:
+
+conda activate phonopy
+
+run :
+
+phonopy
+
+we can see: test_phonopy
+
+Tt mean we successfully installed phonopy.
+
+The list of phonopy at list_phonopy
 
