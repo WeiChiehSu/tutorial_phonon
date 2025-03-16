@@ -64,7 +64,7 @@ run :
 
 phonopy
 
-we can see: test_phonopy
+we can see: test_phonopy.txt
 
 Tt mean we successfully installed phonopy.
 
