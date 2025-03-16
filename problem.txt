@@ -18,13 +18,13 @@ and use `conda config --show-sources` to view config file locations.
 
 -conda config --show-sources
 
-==> /home/880212l26111201/intel/oneapi/intelpython/latest/.condarc <==
+==> /home/114514/intel/oneapi/intelpython/latest/.condarc <==
 channels:
-  - /home/880212l26111201/intel/oneapi/conda_channel
+  - /home/114514/intel/oneapi/conda_channel
   - intel
   - defaults
 
--vi /home/880212l26111201/intel/oneapi/intelpython/latest/.condarc
+-vi /home/114514/intel/oneapi/intelpython/latest/.condarc
 
 delete - intel
 
