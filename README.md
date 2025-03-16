@@ -3,11 +3,11 @@ This is a tutorial for running and installing Phonopy and phono3py.
 
 Please Check that VASP or Quantum ESPRESSO is installed on Linux before proceeding with the installation.
 
-For the tutorial of VASP phonon calculation with Phonopy , please refer to:
+For the tutorial of Phonopy phonon calculation with Phonopy VASP , please refer to:
 
 https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP
 
-For the tutorial of Quantum ESPRESSO phonon calculation with Phonopy, please refer to:
+For the tutorial of Phonopy phonon calculation with Quantum ESPRESSO, please refer to:
 
 https://github.com/WeiChiehSu/tutorial_phonon/tree/main/Quantum_Espresso
 
