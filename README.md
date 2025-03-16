@@ -5,7 +5,7 @@ Please Check that VASP or Quantum ESPRESSO is installed on Linux before proceedi
 
 For the tutorial of VASP phonon calculation with Phonopy , please refer to:https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP
 
-For the tutorial of Quantum ESPRESSO phonon calculation with Phonopy, please refer to:https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP
+For the tutorial of Quantum ESPRESSO phonon calculation with Phonopy, please refer to:[https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP](https://github.com/WeiChiehSu/tutorial_phonon/tree/main/Quantum_Espresso)
 
 # Introduction
 
