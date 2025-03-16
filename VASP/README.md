@@ -11,4 +11,7 @@ https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/DFPT
 
 Post-processing methods for calculating phonon properties :
 
-https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/Post-processing
+3.https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/Post-processing
+
+4.The plotting code after post-processing is complete:
+
