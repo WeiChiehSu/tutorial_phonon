@@ -81,3 +81,7 @@ Tt mean we successfully installed phonopy.
 
 The list of phonopy at [list_phonopy](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/list_phonopy.txt)
 
+# The solution of install phonopy
+
+If you have some problem from installing phonopy, you can see: problem.txt
+
