@@ -97,7 +97,7 @@ sh run-all.sh
 .將需要的文件（如 POTCAR、INCAR、KPOINTS 等）複製到這些目錄中，並根據擾動情況修改 POSCAR 文件。
 .在每個目錄中，提交對應的 VASP 計算作業，等待作業完成後再處理下一個目錄。
 
-計算完成後,使用VASP介面創建FORCE_SETS檔案：
+等計算全部完成後,使用VASP介面創建FORCE_SETS檔案：
 
 phonopy -f disp-001/vasprun.xml disp-002/vasprun.xml disp-003/vasprun.xml
 
