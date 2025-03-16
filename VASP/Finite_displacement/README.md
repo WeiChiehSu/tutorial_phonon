@@ -105,6 +105,8 @@ or
 
 phonopy -f disp-{001..003}/vasprun.xml
 
+(一次scf時間約6個小時)
+
 # example
 
 https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/Finite_displacement/example
