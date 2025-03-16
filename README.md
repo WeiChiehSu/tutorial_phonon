@@ -1,7 +1,7 @@
 # Tutorial_phononpy
 This is a tutorial for running and installing Phonopy and phono3py.
 
-Please ensure that VASP or Quantum ESPRESSO is installed on Linux before proceeding with the installation.
+Please Check that VASP or Quantum ESPRESSO is installed on Linux before proceeding with the installation.
 
 # Introduction
 
