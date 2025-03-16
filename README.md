@@ -3,8 +3,9 @@ This is a tutorial for running and installing Phonopy and phono3py.
 
 Please ensure that VASP or Quantum ESPRESSO is installed on Linux before proceeding with the installation.
 
-Before installing Phonopy, we need to install Anaconda on Linux:
 # Compile Anaconda
+
+Before installing Phonopy, we need to install Anaconda on Linux:
 
 wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
 
