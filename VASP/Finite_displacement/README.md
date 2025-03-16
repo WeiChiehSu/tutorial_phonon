@@ -1,4 +1,4 @@
-# phonopy VASP Tutorials:Finite displacement  
+# Phonopy VASP Tutorials:Finite displacement  
 
 # 1.預處理：
 
