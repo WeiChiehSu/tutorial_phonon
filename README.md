@@ -87,7 +87,7 @@ we can see: [test_phonopy.txt](https://github.com/WeiChiehSu/tutorial_phonon/blo
 
 Tt mean we successfully installed phonopy.
 
-The list of phonopy at [list_phonopy](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/list_phonopy.txt)
+The list of phonopy version at [list_phonopy](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/list_phonopy.txt)
 
 # The solution of install phonopy
 
