@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 迴圈遍歷 001 002 003
+# 迴圈遍歷 001 到 006
 for i in $(seq -f "%03g" 1 6)
 do
 	mkdir disp-$i
