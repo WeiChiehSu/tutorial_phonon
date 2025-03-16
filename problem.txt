@@ -1,0 +1,33 @@
+###########Installation problem############
+
+conda create -n phonopy -c conda-forge
+
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+UnavailableInvalidChannel: The channel is not accessible or is invalid.
+  channel name: intel
+  channel url: https://conda.anaconda.org/intel
+  error code: 403
+
+You will need to adjust your conda configuration to proceed.
+Use `conda config --show channels` to view your configuration's current state,
+and use `conda config --show-sources` to view config file locations.
+
+###########solution###########
+
+-conda config --show-sources
+
+==> /home/880212l26111201/intel/oneapi/intelpython/latest/.condarc <==
+channels:
+  - /home/880212l26111201/intel/oneapi/conda_channel
+  - intel
+  - defaults
+
+-vi /home/880212l26111201/intel/oneapi/intelpython/latest/.condarc
+
+delete - intel
+
+-:wq!
+
+############################################
