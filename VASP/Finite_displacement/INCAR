@@ -1,0 +1,41 @@
+system = GdSbTe
+
+#For structure inf
+PREC = Accurate
+#NSW = 0
+#NELM=500
+IBRION = -1
+EDIFF = 1.0e-08
+
+#For smearing (note: close when band calculation)
+ISMEAR = 0
+
+#spin & moment 
+ISPIN = 2
+LORBIT = 10
+LSORBIT = .TRUE.
+LNONCOLLINEAR = .TRUE.
+SAXIS = 0 0 1
+MAGMOM = 6*0 0 0 11 0 0 -11 6*0 
+
+# band & dos
+LWAVE=.FALSE.
+#NBANDS=180
+LCHARG=.FALSE.
+#ICHARG=11
+
+#parrallel
+LPLANE = .TRUE.
+#NPAR = 4
+IALGO = 48
+LSCALU = .FALSE.
+NSIM = 4
+
+#LDA+U
+LDAU = .TRUE.
+LDAUTYPE = 2
+# Sb Gd Te
+LDAUL = -1 3 -1
+LDAUU = 0.0 7.0 0.0
+LDAUJ = 0.0 0.0 0.0 
+LMAXMIX = 6
