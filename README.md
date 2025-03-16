@@ -83,5 +83,5 @@ The list of phonopy at [list_phonopy](https://github.com/WeiChiehSu/tutorial_pho
 
 # The solution of install phonopy
 
-If you have some problem from installing phonopy, you can see: problem.txt
+If you have some problem from installing phonopy, you can see: [problem.txt](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/problem.txt)
 
