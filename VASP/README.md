@@ -15,3 +15,4 @@ Post-processing methods for calculating phonon properties :
 
 4.The plotting code after post-processing is complete:
 
+https://github.com/WeiChiehSu/tutorial_phonon/tree/main/plot_code%20
