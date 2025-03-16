@@ -19,6 +19,6 @@ https://github.com/WeiChiehSu/tutorial_phonon/tree/main/plot_code%20
 
 # The example of finite displacement method and DFPT
 
-1.GdSbTe: consider soc effect AFM and DFT+U
+1.GdSbTe: consider soc effect Antiferromagnetism and DFT+U
 
 2.GdSbTe: only consider soc effect
