@@ -43,4 +43,4 @@ PS.推薦 可在腳本中改變聲子狀態密度的繪製設置(DOS_RANGE = 0 5
 
 下圖為用VASP_phononpy_phonon_band.m進行繪製的有磁性 DFT+U的GdSbTe聲子態密度:
 
-![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/phonon_band/phonon-band.png)
+![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/DOS/dos_total.png)
