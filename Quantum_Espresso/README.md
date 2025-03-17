@@ -27,4 +27,12 @@ sh write_header_in.sh
 
 qsub qe_pw_phonopy.sh
 
-4.接下來，使用以下 phonopy 命令創建 FORCE_SETS
+4.接下來，使用以下 phonopy 命令創建 FORCE_CONSTANTS
+
+phonopy -f NaCl-001.out NaCl-002.out
+
+這裡的 .out 文件是 QE-PW 計算的標準輸出文件。
+
+如果在步驟 1 中創建了更多帶有位移的超胞，則需要將所有的 .out 文件一起傳遞給這個命令。
+
+運行這個命令時，phonopy_disp.yaml 必須位於當前目錄中，因為其中包含了原子位移的信息，這些信息將用來生成 FORCE_CONSTANTS。
