@@ -2,8 +2,6 @@ system = GdSbTe
 
 #For structure inf
 PREC = Accurate
-#NSW = 0
-#NELM=500
 IBRION = 8
 EDIFF = 1.0e-08
 
