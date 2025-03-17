@@ -85,7 +85,7 @@ phonopy
 
 we can see: [test_phonopy.txt](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/test_phonopy.txt)
 
-Tt mean we successfully installed phonopy.
+It mean we successfully installed phonopy.
 
 The list of phonopy version at [list_phonopy](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/list_phonopy.txt)
 
