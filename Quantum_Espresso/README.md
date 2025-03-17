@@ -1,2 +1,2 @@
-# Tutorial phononpy with Quantum ESPRESSO
+# Tutorial phonon with Quantum ESPRESSO
 .
