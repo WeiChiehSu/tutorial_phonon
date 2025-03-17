@@ -14,8 +14,6 @@ ymax = 18;
 projected_ymax = 18; % projected DOS range    [modes/meV]
 xmax_conf = 40; %From mesh.conf
 pitch = 0.01; %From mesh.conf
-Ry_to_meV = 13.605691930242388 * 1000;
-meV_to_1_over_cm = 109737.3157 / Ry_to_meV;
 col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0];
 %%%%%%%%%%%%%%%%%%%%%%%%%
 % column: energy, total dos                                                
@@ -24,12 +22,7 @@ fid=fopen(['projected_dos.dat'],'r');
 ndos = xmax_conf/pitch+1;
 fgetl(fid);                  
 dos = fscanf(fid,repmat('%f ',1,1+natom),[1+natom ndos])'; fgetl(fid);
-%dos(:,1) = dos(:,1) / meV_to_1_over_cm;
-%dos(:,2:end) = dos(:,2:end) * meV_to_1_over_cm;
 fclose(fid);
-%%% plot %%%
-mkdir pdos
-cd pdos
 %%% all %%%
 figure;
 hold on
@@ -44,7 +37,6 @@ ylabel('F(w) (modes/THz)'); xlabel('Frequency (THz)');
 axis([xmin xmax ymin ymax]);
 title([ 'phonon dos, ' material_name ]);
 set(gca,'linewidth',2);
-% set(gca,'Ticklength',[0.02 0.035]);
 set(gca,'FontSize',15)
 set(gca,'XMinorTick','on')
 x = plot([xmin xmax],[ymax ymax],'k','linewidth',2);
@@ -52,23 +44,3 @@ set(get(get(x,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
 y = plot([xmax xmax],[ymin ymax],'k','linewidth',2);
 set(get(get(y,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
 saveas(gcf,['dos_all' '.png']);
-%%% projected atom dos %%%
-for i_natom = 1:natom
-    figure;
-    hold on
-    plot(dos(:,1),dos(:,1+i_natom)','-','Color',col(1+i_natom,:),'LineWidth',1.75); 
-    legend([ ' the ' num2str(i_natom) ' dos']);
-    ylabel('F(w) (modes/THz)'); xlabel('Frequency (THz)');
-    axis([xmin xmax ymin projected_ymax]);
-    title([ 'phonon dos, ' material_name ' , projected atom dos']);
-    set(gca,'linewidth',2);
-    set(gca,'FontSize',15)
-    set(gca,'XMinorTick','on')
-    x = plot([xmin xmax],[projected_ymax projected_ymax],'k','linewidth',2);
-    set(get(get(x,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
-    y = plot([xmax xmax],[ymin projected_ymax],'k','linewidth',2);
-    set(get(get(y,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
-    saveas(gcf,['dos_' num2str(i_natom) '.png']);
-end
-save pdos_data.mat natom ndos dos
-cd ..
