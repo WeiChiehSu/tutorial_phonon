@@ -1,4 +1,4 @@
-擁有FORCE_SETS和phonopy_disp.yaml後,便能計算聲子性質,以下是計算聲子性質的方法:
+擁有FORCE_CONSTANTS和phonopy_disp.yaml後,便能計算聲子性質,以下是計算聲子性質的方法:
 
 # 聲子譜
 
