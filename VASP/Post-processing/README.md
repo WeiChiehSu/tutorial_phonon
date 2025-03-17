@@ -44,3 +44,25 @@ PS.推薦 可在腳本中改變聲子狀態密度的繪製設置(DOS_RANGE = 0 5
 下圖為用VASP_phononpy_phonon_band.m進行繪製的有磁性 DFT+U的GdSbTe聲子態密度:
 
 ![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/DOS/dos_total.png)
+
+# 聲子投影態密度(PDOS)
+
+投影DOS（Projected DOS）可以通過以下命令計算並繪製：
+
+phonopy-load --mesh 20 20 20 --pdos "1, 2, 3, 4, 5, 6," -p -s
+
+PS. "1, 2, 3, 4, 5, 6," 表示要投影第1-6顆原子的投影態密度
+
+or
+
+運行腳本 phonopy_phonon_pdos_change.sh:
+
+qsub phonopy_phonon_pdos_change.sh
+
+PS.推薦 可在腳本中改變聲子投影態密度的繪製設置(DOS_RANGE = 0 10 0.0001表示繪製0-10THZ間的聲子狀態密度 每0.0001THZ繪製一個數值)
+
+運行過後會生成projected_dos.dat和partial_dos.pdf projected_dos.dat可以用VASP_phononpy_phonon_pdos.m進行繪製聲子譜
+
+下圖為用VASP_phononpy_phonon_pdos.m進行繪製的有磁性 DFT+U的GdSbTe聲子態密度:
+
+![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/DOS/dos_total.png)
