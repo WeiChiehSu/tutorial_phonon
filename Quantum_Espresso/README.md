@@ -59,3 +59,6 @@ phonopy --qe -c NaCl.in -p band.conf
 
 用 QE_phononpy_phonon_band_v1.m 進行繪製:
 
+下圖為NaCl的聲子譜:
+
+![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/thermal_properties/total_thermal_properties.png)
