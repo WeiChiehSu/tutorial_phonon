@@ -9,9 +9,9 @@ https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/Finite_displacement
 
 https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/DFPT
 
-Post-processing methods for calculating phonon properties :
+3.Post-processing methods for calculating phonon properties :
 
-3.https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/Post-processing
+https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/Post-processing
 
 4.The plotting code after post-processing is complete:
 
