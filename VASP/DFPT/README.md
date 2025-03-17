@@ -97,3 +97,5 @@ phonopy --fc vasprun.xml
 https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/DFPT/hessian.txt
 
 # example
+
+https://github.com/WeiChiehSu/tutorial_phonon/tree/main/VASP/DFPT/example
