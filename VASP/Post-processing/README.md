@@ -18,4 +18,7 @@ PS.推薦 可在腳本中改變聲子譜切點密度(BAND_POINTS = 200表示在�
 
 運行過後會生成band.yaml和band.pdf band.yaml可以用VASP_phononpy_phonon_band.m進行繪製聲子譜
 
+![圖片描述](images/example.png)
+
+
 # 聲子態密度
