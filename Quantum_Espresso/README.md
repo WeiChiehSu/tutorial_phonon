@@ -37,4 +37,17 @@ phonopy -f NaCl-001.out NaCl-002.out
 
 運行這個命令時，phonopy_disp.yaml 必須位於當前目錄中，因為其中包含了原子位移的信息，這些信息將用來生成 FORCE_CONSTANTS。
 
-#
+# Post-processing
+
+繪製phonon band:
+
+需要band.conf檔案:
+
+band.conf設置:
+
+DIM = 2 2 2 [超晶格]
+
+PRIMITIVE_AXIS = 0.0 0.5 0.5  0.5 0.0 0.5  0.5 0.5 0.0 [原始晶胞軸：X Y Z]
+
+BAND = 0.0 0.0 0.0  0.5 0.0 0.0  0.5 0.5 0.0  0.0 0.0 0.0  0.5 0.5 0.5[倒空間路徑]
+
