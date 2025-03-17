@@ -87,4 +87,4 @@ PS.推薦 可在腳本中改變計算熱力學性質的參數(TMIN =0 TMAX = 100
 
 下圖為用VASP_phononpy_thermal_properties.m進行繪製的無磁性的GdSbTe聲子熱力學性質
 
-![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/phonon_band/phonon-band.png)
+![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/thermal_properties/total_thermal_properties.png)
