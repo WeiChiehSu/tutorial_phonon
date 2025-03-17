@@ -92,4 +92,4 @@ qsub vasp_pbspro.sh
 
 phonopy --fc vasprun.xml
 
-
+# hessian
