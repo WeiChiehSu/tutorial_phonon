@@ -1,16 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This function use to plot band structure form EIGENVAL
-% read reciprocal vector from OUTCAR
-% rec = b1x b1y b1z
-%       b2x b2y b2z
-%       b3x b3y b3z
-% read fermi level from OUTCAR
+% This function use to plot band structure form band.yaml
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% function vasp_band()
 clear 
 
 %%% INPUT PARAMETER %%%
-% Ef = 5.1782   ;  % Fermi elvel
 material_name = 'GdSbTe-SOC(DFPT-111)';
 high_symmetry_point_name = {'\Gamma','X','M','\Gamma','Z','R','A','Z','interpreter','LaTex'};
 natom = 6;
@@ -22,9 +15,6 @@ ymax = 4.5;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 fid = fopen('band.yaml','r');
 %%READ DATA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Ry_to_meV = 13.605691930242388 * 1000; % energy range [meV]
-meV_to_1_over_cm = 109737.3157 / Ry_to_meV; % energy range [meV]
 
 line1 = fgetl(fid);  
 nk = str2double(line1(9:13));
@@ -80,7 +70,6 @@ hold on;
 plot(kd,Ebnd,'r','LineWidth',1.5);
 axis([0,kd(end),ymin,ymax]);
 box on;
-% axis square;
 ylabel('frequency (THz)');
 title(material_name);
 
@@ -99,5 +88,3 @@ for hh=1:hs-1
     plot(x,y,'k')
 end
 saveas(gcf,['phonon-band' '.png']);
-% close all
-% save band_data.mat Ebnd kd k_path_car
