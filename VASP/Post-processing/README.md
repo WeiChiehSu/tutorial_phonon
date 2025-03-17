@@ -63,6 +63,6 @@ PS.推薦 可在腳本中改變聲子投影態密度的繪製設置(DOS_RANGE = 
 
 運行過後會生成projected_dos.dat和partial_dos.pdf projected_dos.dat可以用VASP_phononpy_phonon_pdos.m進行繪製聲子譜
 
-下圖為用VASP_phononpy_phonon_pdos.m進行繪製的有磁性 DFT+U的GdSbTe聲子態密度:
+下圖為用VASP_phononpy_phonon_pdos.m進行繪製的有磁性 DFT+U的GdSbTe每顆原子的聲子投影態密度:
 
 ![圖片描述](https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/Post-processing/PDOS/dos_all.png)
