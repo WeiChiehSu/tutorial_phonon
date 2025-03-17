@@ -22,3 +22,16 @@ phonopy_disp.yaml 包含位移資訊。
 
 POSCAR-{number} 是帶有原子位移的超晶胞，對應於在phonopy_disp.yaml中列出的不同原子位移。
 
+# 2.計算力常數
+
+將創建的SPOSCAR重新命名為POSCAR，並用於VASP計算：
+
+mv SPOSCAR POSCAR
+
+POSCAR-{number} 文件將不會使用
+
+準備好 INCAR KPOINTS POTCAR vasp_pbspro.sh 放進生成了POSCAR、phonopy_disp.yaml和POSCAR-{number}的資料夾:
+
+將IBRION = -1 改為 IBRION = 8
+
+INCAR 設置如下:
