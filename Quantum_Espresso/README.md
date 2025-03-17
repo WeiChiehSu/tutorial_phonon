@@ -51,3 +51,11 @@ PRIMITIVE_AXIS = 0.0 0.5 0.5  0.5 0.0 0.5  0.5 0.5 0.0 [原始晶胞軸：X Y Z]
 
 BAND = 0.0 0.0 0.0   0.5 0.0 0.0   0.5 0.5 0.0   0.0 0.0 0.0   0.5 0.5 0.5[倒空間路徑]
 
+運行指令:
+
+phonopy --qe -c NaCl.in -p band.conf
+
+將輸出檔案:band.yaml
+
+用 QE_phononpy_phonon_band_v1.m 進行繪製:
+
