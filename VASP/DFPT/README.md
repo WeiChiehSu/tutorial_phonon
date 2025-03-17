@@ -34,7 +34,7 @@ POSCAR-{number} 文件將不會使用
 
 將IBRION = -1 改為 IBRION = 8
 
-INCAR 設置如下:
+INCAR 設置如下(和Finite_displacement的INCAR差不多 只是不設材料的磁矩和DFT+U):
 
 ---------------------------------------
 
@@ -44,7 +44,9 @@ system = GdSbTe
 
 PREC = Accurate
 
-IBRION = 8
+IBRION = 8 #數值計算中「BFGS」方法（Broyden–Fletcher–Goldfarb–Shanno algorithm）。
+
+          #這種方法是一種優化算法，常用於進行結構優化和最小化計算。選擇 8 是用來進行靜態或動態計算時的離子運動優化
 
 EDIFF = 1.0e-08
 
@@ -81,3 +83,9 @@ SAXIS = 0 0 1
 MAGMOM = 6*0 0 0 0 0 0 0 6*0
 
 ---------------------------------------
+
+運行VASP:
+
+qsub vasp_pbspro.sh
+
+#3.
