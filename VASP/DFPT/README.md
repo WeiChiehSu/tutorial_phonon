@@ -88,10 +88,10 @@ MAGMOM = 6*0 0 0 0 0 0 0 6*0
 
 qsub vasp_pbspro.sh
 
-https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/DFPT/hessian.txt
-
 完成VASP計算後，確認vasprun.xml包含赫西安（hessian）元素，然後創建FORCE_CONSTANTS文件：
 
 phonopy --fc vasprun.xml
 
 # hessian
+
+https://github.com/WeiChiehSu/tutorial_phonon/blob/main/VASP/DFPT/hessian.txt
