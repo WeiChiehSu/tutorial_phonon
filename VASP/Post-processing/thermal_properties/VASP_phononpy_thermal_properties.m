@@ -75,5 +75,3 @@ set(get(get(x,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
 y = plot([TMAX TMAX],[ymin ymax],'k','linewidth',2);
 set(get(get(y,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
 saveas(gcf,['total_thermal_properties' '.png']);
-% close all
-% save band_data.mat Ebnd kd k_path_car
