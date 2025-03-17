@@ -1,6 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% phonon dos: default unit [1/cm]
-% change unit from [1/cm] to [meV]
+% phonon dos: default unit [THz]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 clear 
@@ -8,8 +7,6 @@ clear
 %%%%%%%%%%%%%%%%%%%%%%%%
 material_name = 'GdSbTe-AFM-7U(DFPT-111)';
 natom = 6;
-Ry_to_meV = 13.605691930242388 * 1000;
-meV_to_1_over_cm = 109737.3157 / Ry_to_meV;
 xmin = 0;    % frequency range (THz)
 xmax = 5;   
 ymin = 0;    % DOS range    [modes/THz]
@@ -24,8 +21,6 @@ fid=fopen([ 'total_dos.dat'],'r');
 ndos = xmax_conf/pitch+1;
 fgetl(fid);                  
 dos = fscanf(fid,repmat('%f ',1,2),[2 ndos])'; fgetl(fid);
-%dos(:,1) = dos(:,1) / meV_to_1_over_cm;
-%dos(:,2:end) = dos(:,2:end) * meV_to_1_over_cm;
 fclose(fid);
 %%% plot %%%
 figure;
@@ -45,5 +40,3 @@ set(get(get(x,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
 y = plot([xmax xmax],[ymin ymax],'k','linewidth',2);
 set(get(get(y,'Annotation'),'LegendInformation'),'IconDisplayStyle','off');
 saveas(gcf,['dos_total' '.png']);
-save dos_data.mat natom ndos dos
-cd ..
