@@ -4,6 +4,8 @@
 
 phononpy_phonon_band.m可以讀取band.yaml進行繪製聲子譜:
 
+下面為phononpy_phonon_band.m的輸入參數
+
 material_name = 'NaCl'; #材料名
 
 high_symmetry_point_name = {'\Gamma','X','M','\Gamma','R','interpreter','LaTex'}; #高對稱點
