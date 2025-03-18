@@ -70,7 +70,7 @@ col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0]; #顏色參數(不要動)
 
 # phononpy_thermal_properties.m
 
-phononpy_thermal_properties.m 可以讀取total_dos.data進行繪製每個原子的聲子投影態密度
+phononpy_thermal_properties.m 可以讀取thermal_properties.yaml進行繪製材料的熵,比熱
 
 material_name = 'NaCl';
 
