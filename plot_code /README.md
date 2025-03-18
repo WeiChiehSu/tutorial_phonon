@@ -41,3 +41,14 @@ col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0]; #顏色參數(不要動)
 xmax_conf = 5; % frequency range (THz) From mesh.conf
 
 pitch = 0.001; %From mesh.conf
+
+material_name = 'NaCl';
+natom = 2;
+xmin = 0;    % frequency range (THz)
+xmax = 40;   
+ymin = 0;    % DOS range    [modes/THz]
+ymax = 4;
+projected_ymax = 3; % projected DOS range    [modes/meV]
+xmax_conf = 40; %From mesh.conf
+pitch = 0.01; %From mesh.conf
+col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0];
