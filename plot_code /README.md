@@ -67,3 +67,5 @@ xmax_conf = 40; %frequency range (THz) From mesh.conf
 pitch = 0.01; %From mesh.conf
 
 col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0]; #顏色參數(不要動)
+
+# phononpy_thermal_properties.m
