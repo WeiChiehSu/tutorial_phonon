@@ -4,7 +4,7 @@
 
 phononpy_phonon_band.m可以讀取band.yaml進行繪製聲子譜
 
-下面為phononpy_phonon_band.m的輸入參數:
+下面為 phononpy_phonon_band.m 的輸入參數:
 
 material_name = 'NaCl'; #材料名
 
@@ -22,7 +22,7 @@ ymax = 7;
 
 phononpy_phonon_dos.m可以讀取total_dos.data進行繪製總聲子態密度
 
-下面為phononpy_phonon_dos.m的輸入參數:
+下面為 phononpy_phonon_dos.m 的輸入參數:
 
 material_name = '114514'; #材料名
 
@@ -46,7 +46,7 @@ pitch = 0.001; %From mesh.conf
 
 phononpy_phonon_pdos.m可以讀取total_dos.data進行繪製每個原子的聲子投影態密度(如要考慮不同原子貢獻的總和,需要修改code)
 
-下面為phononpy_phonon_pdos.m的輸入參數:
+下面為 phononpy_phonon_pdos.m 的輸入參數:
 
 material_name = 'NaCl'; #材料名
 
@@ -70,17 +70,19 @@ col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0]; #顏色參數(不要動)
 
 # phononpy_thermal_properties.m
 
-phononpy_thermal_properties.m 可以讀取thermal_properties.yaml進行繪製材料的熵,比熱
+phononpy_thermal_properties.m 可以讀取thermal_properties.yaml進行繪製材料的熵,比熱,自由能和聲子能量隨著溫度的變化
+
+下面為 phononpy_thermal_properties.m 的輸入參數:
 
 material_name = 'NaCl';
 
-natom = 2;
+natom = 2; #原子數
 
-TMIX = 0;
+TMIX = 0; #溫度下限
 
-TMAX =1000;
+TMAX =1000; #溫度上限
 
-TSTEP = 10;
+TSTEP = 10; 
 
 ymin = -100;
 
