@@ -42,13 +42,28 @@ xmax_conf = 5; % frequency range (THz) From mesh.conf
 
 pitch = 0.001; %From mesh.conf
 
-material_name = 'NaCl';
-natom = 2;
+# phononpy_phonon_pdos.m
+
+phononpy_phonon_pdos.m可以讀取total_dos.data進行繪製每個原子的聲子投影態密度(如要考慮不同原子貢獻的總和,需要修改code)
+
+下面為phononpy_phonon_pdos.m的輸入參數:
+
+material_name = 'NaCl'; #材料名
+
+natom = 2; #原子數
+
 xmin = 0;    % frequency range (THz)
+
 xmax = 40;   
+
 ymin = 0;    % DOS range    [modes/THz]
+
 ymax = 4;
+
 projected_ymax = 3; % projected DOS range    [modes/meV]
-xmax_conf = 40; %From mesh.conf
+
+xmax_conf = 40; %frequency range (THz) From mesh.conf
+
 pitch = 0.01; %From mesh.conf
-col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0];
+
+col = [1 0 0;0 1 0;0 0 1;0 1 1;1 0 1;1 1 0;0 0 0]; #顏色參數(不要動)
