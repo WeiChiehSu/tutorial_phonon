@@ -18,3 +18,6 @@ ymin = 0;    % frequency range [THz]
 
 ymax = 7;
 
+# phononpy_phonon_dos.m
+
+phononpy_phonon_dos.m可以讀取band.yaml進行繪製聲子譜:
