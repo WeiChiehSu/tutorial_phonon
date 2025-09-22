@@ -29,7 +29,7 @@ qsub qe_pw_phonopy.sh
 
 4.接下來，使用以下 phonopy 命令創建 FORCE_CONSTANTS
 
-phonopy -f NaCl-001.out NaCl-002.out
+phonopy -f NaCl-{001..002}.out
 
 這裡的 .out 文件是 QE-PW 計算的標準輸出文件。
 
